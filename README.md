@@ -2,3 +2,7 @@
 
 ## repository rule
  - main 브런치에는 readme파일만 merge합니다.
+
+## PR role
+ - 챕터당 7개 이상의 댓글을 남깁니다.
+ - 챕터당 10개 이상의 이모지를 남깁니다.
