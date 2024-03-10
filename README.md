@@ -5,7 +5,7 @@
 
 ## 구성원
 
-|               전 민 규(리더)                |                 ksdhk                  |                    김희진                     |                   yeodae                   |                   Leodohyun                   |                   man-coding                   |
+|               민규(리더)                |                 국밥                  |                    김희진                     |                   yeodae                   |                   Leodohyun                   |                   man-coding                   |
 |:--------------------------------------:| :------------------------------------: |:------------------------------------------:| :------------------------------------: | :------------------------------------: | :------------------------------------: |
 | [@16min99](https://github.com/16min99) | [@ksdhk](https://github.com/ksdhk) | [@Khjin06k](https://github.com/Khjin06k) | [@yeodae](https://github.com/yeodae) | [@Leodohyun](https://github.com/Leodohyun) |[@man-coding](https://github.com/man-coding) | 
 
