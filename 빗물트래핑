@@ -1,0 +1,32 @@
+class Solution {
+    public int trap(int[] height) {
+        
+       if (height.length < 3) { //ㅎㅎ 
+            return 0;
+        }
+
+        int volume = 0; // 물량
+        
+        int left = 0; //왼쪽시작점
+        int right = height.length -1; //오른쪽시작점
+
+        int leftMax = 0;  //좌우 Max값 생성
+        int rightMax = 0;
+        
+        while( left < right) { //최고 높이점까지 수행
+            leftMax = Math.max(height[left], leftMax); //현재까지 왼쪽 최고높이
+            rightMax = Math.max(height[right], rightMax); //현재까지 오른쪽 최고높이
+
+            if(leftMax <= rightMax){  //임의의 오른쪽 벽이 생겼으면
+                volume += leftMax - height[left]; //현재왼쪽 최고점과 높이 격차만큼 물량 추가
+                left++; //왼쪽으로 한칸 이동
+            }else{  //임의의 왼쪽벽이 생겼으면
+                volume += rightMax - height[right];  //현재 오른쪽 최고점과 높이 격차만큼 물량 추가
+                right--; //오른쪽으로 한칸이동            
+            }
+        }
+
+        return volume; //총 물량 리턴
+        }
+
+    }
