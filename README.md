@@ -5,9 +5,9 @@
 
 ## 구성원
 
-|               민규(리더)                |                 국밥                  |                    김희진                     |               소니                       |
-|:--------------------------------------:| :------------------------------------: |:------------------------------------------:| :------------------------------------: |  
-| [@16min99](https://github.com/16min99) | [@ksdhk](https://github.com/ksdhk) | [@Khjin06k](https://github.com/Khjin06k) | [@kim-sunah](https://github.com/kim-sunah) |
+|               민규(리더)                |                 국밥                  |                    김희진                     |               소니                       |               이벙헌               |
+|:--------------------------------------:| :------------------------------------: |:------------------------------------------:| :------------------------------------: | :------------------------------------: |  
+| [@16min99](https://github.com/16min99) | [@ksdhk](https://github.com/ksdhk) | [@Khjin06k](https://github.com/Khjin06k) | [@kim-sunah](https://github.com/kim-sunah) | [@kim-sunah](https://github.com/nickkies) |
 
 ## branch rule
  - main 브런치에는 readme파일만 merge합니다.
