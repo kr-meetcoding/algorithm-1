@@ -2,7 +2,7 @@ package chapter08;
 
 public class MergeTwoSortedLists {
     public static ListNode solution(ListNode list1, ListNode list2) {
-        ListNode tmp = new ListNode(-999);
+        ListNode tmp = new ListNode(Integer.MIN_VALUE);
         ListNode cur = tmp;
 
         while (list1 != null && list2 != null) {
