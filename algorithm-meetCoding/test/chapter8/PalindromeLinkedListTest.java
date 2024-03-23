@@ -1,9 +1,7 @@
-package test;
+package chapter8;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-import chapter8.ListNode;
-import chapter8.PalindromeLinkedList;
 import org.junit.jupiter.api.Test;
 
 class PalindromeLinkedListTest {
