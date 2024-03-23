@@ -21,7 +21,7 @@ public class PalindromeLinkedList {
         }
 
         // 중간을 기준으로 뒷부분을 역순으로 만들기
-        ListNode reversedHalf = reverseLinkedList(slow.next);
+        ListNode reversedHalf = ReverseLinkedList.reverseLinkedList(slow.next);
 
         // 원래 연결리스트의 앞부분과 역순으로 만든 뒷부분을 비교
         while (reversedHalf != null) {
@@ -31,20 +31,5 @@ public class PalindromeLinkedList {
             reversedHalf = reversedHalf.next;
         }
         return true;
-    }
-
-    // 연결리스트를 역순으로 만드는 메소드
-    private static ListNode reverseLinkedList(ListNode head) {
-        ListNode prev = null;
-        ListNode current = head;
-
-        while (current != null) {
-            ListNode next = current.next;
-            current.next = prev;
-            prev = current;
-            current = next;
-        }
-
-        return prev;
     }
 }
