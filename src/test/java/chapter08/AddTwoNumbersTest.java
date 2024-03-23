@@ -1,17 +1,15 @@
 package chapter08;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-
-import java.util.Arrays;
 
 public class AddTwoNumbersTest {
     @Test
     public void test() {
-        ListNode[] lists = Arrays
-                .stream(new int[][]{{2, 4, 3}, {5, 6, 2}})
-                .map(Utils::arrayToList)
-                .toArray(ListNode[]::new);
+        ListNode list1 = ListNode.of(2, 4, 3);
+        ListNode list2 = ListNode.of(5, 6, 2);
+        ListNode answer = ListNode.of(7, 0, 6);
 
-        Utils.assertListEqualsArray(AddTwoNumbers.solution(lists[0], lists[1]), new int[]{7, 0, 6});
+        Assertions.assertEquals(answer, AddTwoNumbers.solution(list1, list2));
     }
 }
