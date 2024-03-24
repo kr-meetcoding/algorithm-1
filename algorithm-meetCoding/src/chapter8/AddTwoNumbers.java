@@ -8,9 +8,11 @@ import java.math.BigInteger;
 // 설명 : 342 + 265 = 607
 public class AddTwoNumbers {
 
-    public static BigInteger addTwoNumbers(ListNode list1, ListNode list2) {
-        StringBuilder sb = new StringBuilder();
-        int carry = 0; // 올림을 위한 변수
+
+    public static ListNode addTwoNumbers(ListNode list1, ListNode list2) {
+        ListNode listNode = new ListNode(0);
+        ListNode current = listNode;
+        int carry = 0;
 
         while (list1 != null || list2 != null) {
             int sum = carry;
@@ -27,13 +29,14 @@ public class AddTwoNumbers {
             carry = sum / 10;
             sum %= 10;
 
-            sb.append(sum);
+            current.next = new ListNode(sum);
+            current = current.next;
         }
 
         if (carry > 0) {
-            sb.append(carry);
+            current.next = new ListNode(carry);
         }
 
-        return new BigInteger(sb.reverse().toString());
+        return listNode.next;
     }
 }

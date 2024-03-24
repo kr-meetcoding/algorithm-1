@@ -10,15 +10,9 @@ class AddTwoNumbersTest {
     public void addTwoNumbersTest1() {
         ListNode list1 = Utils.arrayToList(new int[]{2, 4, 3});
         ListNode list2 = Utils.arrayToList(new int[]{5, 6, 2});
-        BigInteger output = AddTwoNumbers.addTwoNumbers(list1, list2);
-        assertEquals(new BigInteger("607"), output);
-    }
+        ListNode output = AddTwoNumbers.addTwoNumbers(list1, list2);
 
-    @Test
-    public void addTwoNumbersTest2() {
-        ListNode list1 = Utils.arrayToList(new int[]{1, 2, 3, 9});
-        ListNode list2 = Utils.arrayToList(new int[]{1, 2, 3, 9});
-        BigInteger output = AddTwoNumbers.addTwoNumbers(list1, list2);
-        assertEquals(new BigInteger("18642"), output);
+        ListNode answer = Utils.arrayToList(new int[]{7, 0, 6});
+        assertTrue(Utils.compareLists(output, answer));
     }
 }
