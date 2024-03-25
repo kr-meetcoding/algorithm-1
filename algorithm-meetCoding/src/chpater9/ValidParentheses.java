@@ -5,7 +5,6 @@ import java.util.ArrayDeque;
 // 문제 : 대중소 세 종류 괄호로 된 입력값이 유효한지 판별하라.
 // 입력 : []{}()
 // 출력 : true
-// [{()()}]
 public class ValidParentheses {
     public static boolean isValid(String s) {
         ArrayDeque<Character> stack = new ArrayDeque<>();

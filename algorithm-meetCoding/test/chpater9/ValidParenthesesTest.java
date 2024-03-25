@@ -23,4 +23,10 @@ class ValidParenthesesTest {
         String s = "()(]{}[)";
         assertFalse(ValidParentheses.isValid(s));
     }
+
+    @Test
+    public void validParenthesesTest4() {
+        String s = "";
+        assertTrue(ValidParentheses.isValid(s));
+    }
 }
