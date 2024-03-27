@@ -1,23 +1,22 @@
 package chapter09;
 
-import java.util.Stack;
+import java.util.ArrayDeque;
+import java.util.Deque;
+import java.util.Map;
 
 public class ValidParentheses {
     public static boolean solution(String s) {
-        Stack<Character> stack = new Stack<>();
+        Deque<Character> stack = new ArrayDeque<>();
+        Map<Character, Character> map = Map.of(')', '(', '}', '{', ']', '[');
+
         for (char c : s.toCharArray()) {
-            if (c == '(' || c == '{' || c == '[') {
+            if (!map.containsKey(c)) {
                 stack.push(c);
-            } else {
-                if (stack.isEmpty()) {
-                    return false;
-                }
-                char top = stack.pop();
-                if ((c == ')' && top != '(') || (c == '}' && top != '{') || (c == ']' && top != '[')) {
-                    return false;
-                }
+            } else if (stack.isEmpty() || map.get(c) != stack.pop()) {
+                return false;
             }
         }
+
         return stack.isEmpty();
     }
 }
