@@ -1,13 +1,13 @@
 # 알고리즘 자바 스터디 with 코틀린 스터디
 ## 개요
 - 언어 : JAVA 
-- 스터디 방식 : PR을 활용한 상시 코드리뷰 & 주 단위 스크럼( 매주 일요일 22시 디스코드 )
+- 스터디 방식 : PR을 활용한 상시 코드리뷰 & 주 단위 스크럼( 매주 일요일 23시 디스코드 )
 
 ## 구성원
 
-|               민규(리더)                |                 국밥                  |                    김희진                     |                   yeodae                   |                   Leodohyun                   |                   man-coding                   |
-|:--------------------------------------:| :------------------------------------: |:------------------------------------------:| :------------------------------------: | :------------------------------------: | :------------------------------------: |
-| [@16min99](https://github.com/16min99) | [@ksdhk](https://github.com/ksdhk) | [@Khjin06k](https://github.com/Khjin06k) | [@yeodae](https://github.com/yeodae) | [@Leodohyun](https://github.com/Leodohyun) |[@man-coding](https://github.com/man-coding) | 
+|               민규(리더)                |                 국밥                  |                    김희진                     |               소니                       |               이벙헌               |
+|:--------------------------------------:| :------------------------------------: |:------------------------------------------:| :------------------------------------: | :------------------------------------: |  
+| [@16min99](https://github.com/16min99) | [@ksdhk](https://github.com/ksdhk) | [@Khjin06k](https://github.com/Khjin06k) | [@kim-sunah](https://github.com/kim-sunah) | [@kim-sunah](https://github.com/nickkies) |
 
 ## branch rule
  - main 브런치에는 readme파일만 merge합니다.
