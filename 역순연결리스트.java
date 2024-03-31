@@ -9,6 +9,33 @@
  * }
  */
 class Solution {
+    public ListNode reverseBetween(ListNode head, int left, int right) {
+        if(head == null){
+            return null;
+        }
+
+        ListNode root = new ListNode(Integer.MIN_VALUE);
+        //시작점 찾기
+        root.next = head;
+        ListNode start = root;
+        for(int i = 0; i < left -1; i++){
+            start = start.next;
+        }
+        ListNode end = start.next;
+        
+        //범위 구간 만큼 순서 바꾸기
+        for(int i = 0 ; i < right - left ; i++){
+            ListNode tmp = start.next;
+            start.next = end.next;
+            end.next = end.next.next;
+            start.next.next = tmp;
+        }
+
+        return root.next;
+
+
+
+
     public ListNode reverseList(ListNode head) {
         ListNode prev = null, current = head, next =null;
 
@@ -24,5 +51,6 @@ class Solution {
         }
         
         return prev;
+
     }
 }
