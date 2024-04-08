@@ -5,9 +5,9 @@
 
 ## 구성원
 
-|               민규(리더)                |                 국밥                  |                    김희진                     |               소니                       |               이벙헌               |
+|               민규(리더)                |                 국밥                  |                     oe                 |               동동                       |               이벙헌               |
 |:--------------------------------------:| :------------------------------------: |:------------------------------------------:| :------------------------------------: | :------------------------------------: |  
-| [@16min99](https://github.com/16min99) | [@ksdhk](https://github.com/ksdhk) | [@Khjin06k](https://github.com/Khjin06k) | [@kim-sunah](https://github.com/kim-sunah) | [@nickkies](https://github.com/nickkies) |
+| [@16min99](https://github.com/16min99) | [@ksdhk](https://github.com/ksdhk) | [@oeyh98](https://github.com/oeyh98) | [@dongkyun0713](https://github.com/dongkyun0713) | [@nickkies](https://github.com/nickkies) |
 
 ## branch rule
  - main 브런치에는 readme파일만 merge합니다.
@@ -39,3 +39,6 @@ ex) 6_1:유효한 팰린드롬
 | 챕터        | 기간                       | 비고 |
 |-----------|--------------------------|----|
 | [7장:배열](https://github.com/kr-meetcoding/algorithm-1/wiki/7.-%EB%B0%B0%EC%97%B4) | '24.03.09 ~'24.03.17(24) ||
+| [8장:연결리스트] | '24.03.18 ~'24.03.24(31) ||
+| [9장:스택] | '24.03.25 ~'24.03.31(8) ||
+| [10장:데큐와우선순위큐] | '24.04.01 ~'24.04.08(15) ||
