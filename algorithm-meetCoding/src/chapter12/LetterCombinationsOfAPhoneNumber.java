@@ -22,7 +22,7 @@ public class LetterCombinationsOfAPhoneNumber {
             return null;
         }
 
-        List<String> res = new ArrayList<>();
+        List<String> result = new ArrayList<>();
         Map<Character, List<Character>> dict = Map.of(
                 '0', List.of(),
                 '1', List.of(),
@@ -36,8 +36,8 @@ public class LetterCombinationsOfAPhoneNumber {
                 '9', List.of('w', 'x', 'y', 'z')
         );
 
-        dfs(res, dict, digits, 0, new StringBuilder());
-        return res;
+        dfs(result, dict, digits, 0, new StringBuilder());
+        return result;
     }
 
     public static void main(String[] args) {
