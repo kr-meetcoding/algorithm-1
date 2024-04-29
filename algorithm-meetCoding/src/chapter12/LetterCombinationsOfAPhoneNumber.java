@@ -23,7 +23,7 @@ public class LetterCombinationsOfAPhoneNumber {
         }
 
         List<String> result = new ArrayList<>();
-        Map<Character, List<Character>> dict = Map.of(
+        Map<Character, List<Character>> phonePad = Map.of(
                 '0', List.of(),
                 '1', List.of(),
                 '2', List.of('a', 'b', 'c'),
@@ -32,11 +32,11 @@ public class LetterCombinationsOfAPhoneNumber {
                 '5', List.of('j', 'k', 'l'),
                 '6', List.of('m', 'n', 'o'),
                 '7', List.of('p', 'q', 'r', 's'),
-                '8', List.of('t', 'u', 'v'),
+                '8', List.of('t', 'u', 'v'), 
                 '9', List.of('w', 'x', 'y', 'z')
         );
 
-        dfs(result, dict, digits, 0, new StringBuilder());
+        dfs(result, phonePad, digits, 0, new StringBuilder());
         return result;
     }
 
