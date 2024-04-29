@@ -19,7 +19,6 @@ public class Combinations {
         }
     }
 
-
     public static List<List<Integer>> combine(int n, int k) {
         List<List<Integer>> results = new ArrayList<>();
         dfs(results, new LinkedList<>(), n, 1, k);
