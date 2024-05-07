@@ -15,7 +15,11 @@ public class TreeNode<T> {
         this.right = right;
     }
 
-    public static <T> TreeNode<T> of(T[] arr, int i) {
+    static <T> TreeNode<T> of(T[] arr) {
+        return of(arr, 0);
+    }
+
+    private static <T> TreeNode<T> of(T[] arr, int i) {
         if (i >= arr.length) return null;
 
         T value = arr[i];
