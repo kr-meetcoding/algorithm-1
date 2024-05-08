@@ -1,5 +1,7 @@
 package chapter14;
 
+import java.util.Objects;
+
 public class TreeNode<T> {
     T val;
     TreeNode<T> left;
@@ -31,5 +33,15 @@ public class TreeNode<T> {
         root.right = of(arr, 2 * i + 2);
 
         return root;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof TreeNode<?> treeNode)) return false;
+
+        if (!Objects.equals(val, treeNode.val)) return false;
+        if (!Objects.equals(left, treeNode.left)) return false;
+        return Objects.equals(right, treeNode.right);
     }
 }
